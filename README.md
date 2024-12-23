@@ -1,0 +1,3 @@
+# MAG
+
+For ICME2025
