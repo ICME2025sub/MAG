@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>匿名ICME2025 投稿</title>
+  <title>Anonymous ICME2025 Submission</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    /* ================== Global Reset ================== */
+    /* ========== Global Reset ========== */
     * {
       margin: 0;
       padding: 0;
@@ -20,7 +20,7 @@
       padding: 1em;
     }
 
-    /* ================== Container ================== */
+    /* ========== Container ========== */
     .container {
       max-width: 960px;
       margin: 0 auto;
@@ -30,7 +30,7 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    /* ================== Header ================== */
+    /* ========== Header ========== */
     header {
       margin-bottom: 1.5em;
     }
@@ -44,7 +44,7 @@
       color: #666;
     }
 
-    /* ================== Navigation (Optional) ================== */
+    /* ========== Navigation (Optional) ========== */
     nav {
       margin-bottom: 1.5em;
     }
@@ -59,7 +59,7 @@
       text-decoration: underline;
     }
 
-    /* ================== Main Content ================== */
+    /* ========== Main Content ========== */
     main h2 {
       margin-top: 1.2em;
       font-size: 1.3em;
@@ -80,7 +80,17 @@
       margin: 1em 0;
     }
 
-    /* ================== Footer ================== */
+    ul {
+      list-style: inside;
+      margin-left: 0.6em;
+      margin-bottom: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.6em;
+    }
+
+    /* ========== Footer ========== */
     footer {
       margin-top: 2em;
       padding-top: 1em;
@@ -90,7 +100,7 @@
       text-align: center;
     }
 
-    /* ================== Responsive ================== */
+    /* ========== Responsive ========== */
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.4em;
@@ -105,91 +115,93 @@
 <body>
   <div class="container">
     <header>
-      <h1>匿名ICME2025 投稿：Make-A-Game (MAG) 简介</h1>
-      <p>一款基于DiT架构的交互式游戏场景生成模型</p>
+      <h1>Anonymous ICME2025 Submission: Make-A-Game (MAG)</h1>
+      <p>A DiT-Based Model for Interactive Game Video Generation</p>
     </header>
 
-    <!-- 可选的导航部分（如有需要可自行增添其他模块链接）-->
+    <!-- Optional navigation section (add or remove links as needed) -->
     <nav>
-      <a href="#about">项目简介</a>
-      <a href="#features">主要特性</a>
-      <a href="#structure">模型架构</a>
-      <a href="#usage">使用说明</a>
+      <a href="#about">Overview</a>
+      <a href="#features">Key Features</a>
+      <a href="#structure">Model Architecture</a>
+      <a href="#usage">Usage</a>
     </nav>
 
     <main>
-      <!-- 项目简介 -->
+      <!-- Overview Section -->
       <section id="about">
-        <h2>项目简介</h2>
+        <h2>Overview</h2>
         <p>
-          随着玩家对于沉浸式与个性化游戏体验的需求不断攀升，传统人工编写的游戏引擎在开发成本与时间上日益凸显局限性。
-          本项目基于“匿名ICME2025 投稿”论文，提出了
-          <strong>Make-A-Game (MAG)</strong>：首个将DiT（Diffusion Transformer）机制应用于交互式游戏视频生成的模型。
-          在面向高度可控的游戏场景生成过程中，现有模型普遍面临多模态信号难以融合、空间对齐与非空间对齐冲突，以及自动回归漂移等挑战，MAG
-          则通过统一的多模态融合策略与轻量化控制模块有效解决了上述问题。
+          As the demand for immersive, personalized gaming experiences continues to rise, traditional manually coded game engines have become increasingly costly and time-intensive to develop. This project introduces 
+          <strong>Make-A-Game (MAG)</strong>,
+          the first model to employ a Diffusion Transformer (DiT) framework for real-time, interactive game video generation. Current neural models often struggle to integrate diverse control signals, failing to address challenges such as conflicting spatial and non-spatial alignments or deteriorating quality from autoregressive drift. By contrast, MAG utilizes a unified multi-modal control mechanism and lightweight control modules to deliver responsive, coherent, and visually consistent game environments.
         </p>
       </section>
 
-      <!-- 主要特性 -->
+      <!-- Key Features Section -->
       <section id="features">
-        <h2>主要特性</h2>
+        <h2>Key Features</h2>
         <div class="highlight">
-          1. <strong>统一多模态控制</strong>：提出了
-          <em>UC-3DMMAttn（Unified Control 3D MMAttention）</em>
-          模块，一体化处理空间与非空间对齐信息。<br />
-          2. <strong>行动提示分支 (APB)</strong>：通过可插拔轻量化分支实现对角色与背景的独立操控，有效降低画面漂移。<br />
-          3. <strong>三阶段训练流程</strong>：先后对静态图像、大规模视频以及动作数据进行细化训练，兼顾环境生成与动作控制。<br />
-          4. <strong>高分辨率一致性</strong>：在720P及以上分辨率下仍具备优秀的跨帧平滑与内容真实性。<br />
-          5. <strong>可扩展多模态框架</strong>：DiT结构本身具备高可扩展性，为后续多语种文本、动作乃至语音提示等多模态场景提供潜力。
+          1. <strong>Unified Multi-Modal Control</strong>: Incorporates 
+          <em>UC-3DMMAttn (Unified Control 3D MMAttention)</em> 
+          for both spatially aligned and non-spatially aligned constraints.<br />
+          2. <strong>Action Prompt Blocks (APBs)</strong>: Plug-and-play modules for entity-specific manipulation, mitigating autoregressive drift while enhancing real-time control.<br />
+          3. <strong>Three-Stage Training</strong>: Sequentially trains on static images, curated videos, and high-quality motion data to balance environment generation and action fidelity.<br />
+          4. <strong>High Resolution Consistency</strong>: Maintains 720p or higher resolution without sacrificing frame-to-frame coherence or overall fidelity.<br />
+          5. <strong>DiT-Based Extensibility</strong>: The underlying DiT structure supports further integration of more modalities (e.g., multilingual text, audio cues), offering broad potential in interactive applications.
         </div>
       </section>
 
-      <!-- 模型架构概览 -->
+      <!-- Model Architecture Section -->
       <section id="structure">
-        <h2>模型架构</h2>
+        <h2>Model Architecture</h2>
         <p>
-          为实现交互式游戏模拟：
-          <ul>
-            <li>
-              <em>主干 (Backbone)</em>：由堆叠的
-              <strong>UC-3DMMDiT Blocks</strong> 组成，负责复杂环境生成与多模态解耦。
-            </li>
-            <li>
-              <em>轻量化分支 (APB)</em>：插入在主干的关键位置，实现对角色等实体的精准控制，以降低场景背景产生的干扰。
-            </li>
-            <li>
-              <em>三阶段训练</em>：首阶段在大规模游戏领域图像数据上微调基础模型；第二阶段在精选的视频数据集上优化环境生成能力；最后阶段冻结主干，对APB进行细化，以提升角色动作控制效果。
-            </li>
-          </ul>
+          At the core of MAG is a “backbone + lightweight branch” design:
+        </p>
+        <ul>
+          <li>
+            <em>Backbone (UC-3DMMDiT Blocks)</em>: Stacked blocks process complex environments and integrate multi-modal information in a unified manner.
+          </li>
+          <li>
+            <em>Lightweight Branch (APB)</em>: Inserted at strategic points to control in-game entities, decoupling character movement from overall scene generation.
+          </li>
+          <li>
+            <em>Three-Stage Training</em>: 
+            (1) Fine-tune a foundational model on large-scale game images; 
+            (2) Train on video data for environment dynamics; 
+            (3) Freeze the backbone and tune APBs for precise motion control.
+          </li>
+        </ul>
+        <p>
+          This modular structure significantly reduces drift while enhancing both temporal coherence and responsiveness to user commands.
         </p>
       </section>
 
-      <!-- 使用说明或演示 -->
+      <!-- Usage Section -->
       <section id="usage">
-        <h2>使用说明</h2>
+        <h2>Usage</h2>
         <p>
-          项目的源代码与安装步骤尚处于匿名阶段，如有兴趣可关注后续更新。用户可在推理阶段向模型输入：
+          The source code and implementation details remain under anonymous review. During inference, MAG accepts:
         </p>
         <ol>
-          <li>视频帧系列 (如果有历史帧供参考)</li>
-          <li>视频提示 (例如场景概述)</li>
-          <li>文本提示 (对环境风格或内容的描述)</li>
-          <li>行动指令 (APB输入，如角色移动或攻击动作)</li>
+          <li>A sequence of video frames (optional, e.g., initial states)</li>
+          <li>A video prompt (high-level scene details)</li>
+          <li>A text prompt (environment description, style)</li>
+          <li>An action prompt (APB input, e.g., character movement or attack)</li>
         </ol>
         <p>
-          模型会自动回归地生成下一帧的场景画面，并可动态响应用户的行动指令，实现高帧率与高分辨率的游戏视频生成。
+          The model then autoregressively generates subsequent frames. Through UC-3DMMAttn, MAG handles global scene control, while APBs modulate character actions in real time, achieving interactive, coherent, and high-resolution gameplay footage.
         </p>
       </section>
     </main>
 
     <footer>
-      <p>© 匿名ICME2025 投稿 - Make-A-Game (MAG). All rights reserved.</p>
+      <p>© Anonymous ICME2025 Submission - Make-A-Game (MAG). All rights reserved.</p>
     </footer>
   </div>
 
-  <!-- 如果需要额外交互动效，可在此处添加JS脚本 -->
+  <!-- Optional JavaScript for interactions (e.g., smooth scrolling) -->
   <script>
-    // 示例：平滑滚动至锚点
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function(e) {
         e.preventDefault();
