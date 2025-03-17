@@ -24,6 +24,9 @@ This work introduces **Make-A-Game (MAG)**, the first interactive game simulatio
 
 ## Methodology Overview
 
+![Architecture Overview](
+https://github.com/ICME2025sub/MAG/blob/main/material/overview.png)
+
 MAG's architecture consists of three core modules:
 
 1. **Encoder Composition:** Utilizing pretrained encoders (CLIP, mT5, WFVAE) to compress multimodal inputs into latent representations.
