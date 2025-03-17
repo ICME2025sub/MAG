@@ -65,8 +65,6 @@ We rigorously evaluated MAG against state-of-the-art video generation models, us
 
 MAG demonstrates superior qualitative performance compared to contemporary commercial systems and academic models. It successfully generates core FPS game elements (HUD, mini-map, health, ammo counters) without distortion or drift. 
 
-![](https://github.com/ICME2025sub/MAG/blob/main/material/qualitative.png)
-
 ![](https://github.com/ICME2025sub/MAG/blob/main/material/dingxing.png)
 
 ---
