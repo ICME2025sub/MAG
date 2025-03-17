@@ -1,6 +1,7 @@
 # Make-A-Game (MAG): A Novel Paradigm for Interactive Game Rendering
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-red.svg?logo=arxiv)](your_arxiv_link_here)  (waiting for final decision, anonymous now)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-red.svg?logo=arxiv)](your_arxiv_link_here)  (waiting for final decision, anonymous now) 
+
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/ICME2025sub/MAG/)
 
 ---
