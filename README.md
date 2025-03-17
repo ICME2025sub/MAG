@@ -1,7 +1,7 @@
 # Make-A-Game (MAG): A Novel Paradigm for Interactive Game Rendering
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-red.svg?logo=arxiv)](your_arxiv_link_here)  
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](your_github_link_here)
+[![arXiv(waiting for final decision, anonymous now)](https://img.shields.io/badge/arXiv-Paper-red.svg?logo=arxiv)](your_arxiv_link_here)  
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/ICME2025sub/MAG/)
 
 ---
 
@@ -11,7 +11,7 @@ Driven by the growing demand for immersive and personalized gaming experiences, 
 
 ---
 
-## Introduction
+## Overview
 
 The video game industry experiences exponential growth, with rising demands for personalized, immersive content; however, traditional manually coded game engines prove increasingly prohibitive in cost and time. In response, generative video models have emerged as powerful alternatives, yet existing models face significant limitations, such as weak multimodal controllability and issues of spatial misalignment and autoregressive drift.
 
@@ -48,18 +48,18 @@ z_{gen} = f_D(f_{UC}(f_E(z_f, z_c, z_{text})) + APB(a))
 
 ### Quantitative Results
 
-We rigorously evaluated MAG against state-of-the-art video generation models, using a comprehensive set of metrics covering both video quality and control performance. MAG consistently achieved top scores in temporal coherence, dynamic fluidity, and multi-modal control performance. (Please insert TABLE II from the paper here.)
+We rigorously evaluated MAG against state-of-the-art video generation models, using a comprehensive set of metrics covering both video quality and control performance. MAG consistently achieved top scores in temporal coherence, dynamic fluidity, and multi-modal control performance. 
 
 ### Ablation Studies
 
-- **Environmental Control (UC-3DMMAttn):** UC-3DMMAttn significantly enhances both video quality and spatial alignment compared to simplified control approaches. (Please insert TABLE III from the paper here.)
-- **Action Control (APB):** APB dramatically improves subject and background consistency, validating its necessity for effective interactive control. (Please insert TABLE IV from the paper here.)
+- **Environmental Control (UC-3DMMAttn):** UC-3DMMAttn significantly enhances both video quality and spatial alignment compared to simplified control approaches. 
+- **Action Control (APB):** APB dramatically improves subject and background consistency, validating its necessity for effective interactive control. 
 
 ---
 
 ## Qualitative Results
 
-MAG demonstrates superior qualitative performance compared to contemporary commercial systems and academic models. It successfully generates core FPS game elements (HUD, mini-map, health, ammo counters) without distortion or drift. (Please insert Figure 3 from the paper here.)
+MAG demonstrates superior qualitative performance compared to contemporary commercial systems and academic models. It successfully generates core FPS game elements (HUD, mini-map, health, ammo counters) without distortion or drift. 
 
 ---
 
@@ -68,9 +68,9 @@ MAG demonstrates superior qualitative performance compared to contemporary comme
 ### Environment Setup
 
 ```bash
-git clone your_github_link_here
+git clone https://github.com/ICME2025sub/MAG.git
 cd MAG
-pip install -r requirements.txt
+pip install -r requirements.txt # coming soon
 ```
 
 ### Quick Usage Example
@@ -106,8 +106,8 @@ We envision several promising directions for future research, including:
 ## Related Links
 
 - [📖 arXiv Paper](your_arxiv_link_here)
-- [💻 GitHub Repository](your_github_link_here)
-
+- [💻 GitHub Repository](https://github.com/ICME2025sub/MAG)
+- ...(coming soon)
 ---
 
 ## Citation
@@ -117,7 +117,7 @@ If you find this work useful, please cite our paper as follows:
 ```bibtex
 @article{MAG2025,
   title={Make A Game: A Novel Paradigm for Interactive Game Rendering},
-  author={Anonymous},
+  author={Anonymous(coming soon)},
   journal={ICME 2025},
   year={2025}
 }
@@ -127,7 +127,7 @@ If you find this work useful, please cite our paper as follows:
 
 ## Contact
 
-For questions, suggestions, or further discussions, please contact us at: `your_email@example.com`
+For questions, suggestions, or further discussions, please contact us at: `anonymous user(coming soon)`
 
 ---
 
