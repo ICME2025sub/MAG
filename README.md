@@ -7,6 +7,9 @@
 
 ## Introduction
 
+![Compare](
+https://github.com/ICME2025sub/MAG/blob/main/material/compare.png)
+
 The video game industry experiences exponential growth, with rising demands for personalized, immersive content; however, traditional manually coded game engines prove increasingly prohibitive in cost and time. In response, generative video models have emerged as powerful alternatives, yet existing models face significant limitations, such as weak multimodal controllability and issues of spatial misalignment and autoregressive drift.
 
 This work introduces **Make-A-Game (MAG)**, the first interactive game simulation model leveraging the Diffusion Transformer (DiT) architecture integrated with novel control modules. MAG employs a backbone composed of stacked UC-3DMMDiT blocks to handle complex environments, coupled with lightweight Action Prompt Blocks (APBs) to facilitate precise and interactive character control.
@@ -47,16 +50,24 @@ z_{gen} = f_D(f_{UC}(f_E(z_f, z_c, z_{text})) + APB(a))
 
 We rigorously evaluated MAG against state-of-the-art video generation models, using a comprehensive set of metrics covering both video quality and control performance. MAG consistently achieved top scores in temporal coherence, dynamic fluidity, and multi-modal control performance. 
 
+![](https://github.com/ICME2025sub/MAG/blob/main/material/tab2.png)
+
 ### Ablation Studies
 
-- **Environmental Control (UC-3DMMAttn):** UC-3DMMAttn significantly enhances both video quality and spatial alignment compared to simplified control approaches. 
-- **Action Control (APB):** APB dramatically improves subject and background consistency, validating its necessity for effective interactive control. 
+- **Environmental Control (UC-3DMMAttn):** UC-3DMMAttn significantly enhances both video quality and spatial alignment compared to simplified control approaches.
+![](https://github.com/ICME2025sub/MAG/blob/main/material/tab3.png)
 
+- **Action Control (APB):** APB dramatically improves subject and background consistency, validating its necessity for effective interactive control. 
+![](https://github.com/ICME2025sub/MAG/blob/main/material/tab4.png)
 ---
 
 ## Qualitative Results
 
 MAG demonstrates superior qualitative performance compared to contemporary commercial systems and academic models. It successfully generates core FPS game elements (HUD, mini-map, health, ammo counters) without distortion or drift. 
+
+![](https://github.com/ICME2025sub/MAG/blob/main/material/qualitative.png)
+
+![](https://github.com/ICME2025sub/MAG/blob/main/material/dingxing.png)
 
 ---
 
