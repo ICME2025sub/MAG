@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make A Game: A Novel Paradigm for Interactive Game Rendering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="data:,">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f6f8;
+            padding: 0 20px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .links a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        .links a:hover {
+            color: #000;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .highlight {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .icon {
+            color: #007bff;
+            margin-right: 8px;
+        }
+        .comparison-image, .architecture-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #aaa;
+            border-top: 1px solid #ddd;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+    <title>Make-A-Game (MAG): A Novel Paradigm for Interactive Game Rendering</title>
+</head>
+<body>
+<div class="container">
+    <header style="text-align:center; margin-top: 40px;">
+        <h1>🎮 Make-A-Game (MAG)</h1>
+        <h3>A Novel Paradigm for Interactive Game Rendering</h3>
+        <p><em>Anonymous ICME submission</em></p>
+        <div class="links">
+            <a href="YOUR_ARXIV_LINK_HERE"><i class="fa-brands fa-arxiv"></i> ArXiv</a>
+            <a href="YOUR_GITHUB_LINK_HERE"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-gamepad icon"></i> Overview</h2>
+        <p>Make-A-Game (MAG) is the first DiT-based interactive game video generation model, combining spatial and non-spatial multi-modal control signals within a unified framework. MAG introduces the <span class="highlight">UC-3DMMAttn</span> module and lightweight <span class="highlight">Action Prompt Blocks (APBs)</span>, enabling precise control of in-game entities in real-time, achieving state-of-the-art controllability, video fidelity, and stability.</p>
+
+        <h2><i class="fas fa-star icon"></i> Highlights</h2>
+        <ul>
+            <li><i class="fa-solid fa-check icon"></i> First DiT-based model for interactive game video generation.</li>
+            <li><i class="fa-solid fa-check icon"></i> Unified control of spatial and non-spatial alignment signals.</li>
+            <li><i class="fa-solid fa-check icon"></i> Lightweight APB modules enabling real-time entity manipulation.</li>
+            <li><i class="fa-solid fa-check icon"></i> SOTA performance in controllability and temporal coherence.</li>
+        </ul>
+        <h2>MAG Architecture Overview</h2>
+        <img src="YOUR_ARCHITECTURE_IMAGE_HERE" alt="MAG Architecture Diagram" class="architecture-image">
+        <p>The MAG architecture employs a "backbone + lightweight branch" design, where the backbone handles environment generation through stacked UC-3DMMDiT blocks, and the Action Prompt Blocks (APBs) provide real-time character action control.</p>
+
+        <h2>Quantitative Results</h2>
+        <p>MAG achieves state-of-the-art performance in multiple metrics related to video quality and controllability. It excels particularly in maintaining temporal coherence, dynamic fluidity, and precise alignment with user inputs.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Metrics</th>
+                    <th>MAG Performance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Temporal Quality</td><td>97.20%</td></tr>
+                <tr><td>Dynamic Degree</td><td>99.58%</td></tr>
+                <tr><td>FID</td><td>215.8</td></tr>
+                <tr><td>Subject Consistency</td><td>86.20%</td></tr>
+                <tr><td>Background Consistency</td><td>84.50%</td></tr>
+                <tr><td>Appearance Style</td><td>28.50%</td></tr>
+            </tbody>
+        </table>
+        
+        <h2>Qualitative Results</h2>
+        <img src="YOUR_COMPARISON_IMAGE_HERE" alt="Qualitative Comparison with Other Models" class="comparison-image">
+        <p>MAG effectively integrates essential game elements such as mini-maps, health bars, ammo counters, and avoids distortions and drift, as demonstrated in qualitative comparisons with existing state-of-the-art models.</p>
+
+        <h2>BibTeX Citation</h2>
+        <pre>
+@article{Anonymous2025MAG,
+  title={Make A Game: A Novel Paradigm for Interactive Game Rendering},
+  author={Anonymous},
+  journal={ArXiv preprint},
+  year={2025}
+}
+        </pre>
+        
+        <footer>
+            <p>&copy; 2025 MAG Team. All rights reserved.</p>
+        </footer>
+</div>
+</body>
+</html>
