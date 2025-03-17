@@ -5,13 +5,7 @@
 
 ---
 
-## Abstract
-
-Driven by the growing demand for immersive and personalized gaming experiences, existing game video generation models often lack robust multi-modal control and suffer from spatial misalignment or autoregressive drift, thereby necessitating a more advanced real-time interactive solution. To this end, we propose **Make-A-Game (MAG)**, the first DiT-based interactive game video generation model that unifies spatial and non-spatial alignment control signals within the UC-3DMMAttn module and employs Action Prompt Blocks (APBs) for precise, real-time manipulation of in-game entities. MAG follows a three-stage training approach, enabling it to produce high-resolution, drift-free, and temporally coherent content by dynamically modulating character actions while preserving detailed environments. Extensive experiments demonstrate MAG’s superiority in controllability, video fidelity, and stability, providing new avenues for industrial-scale game development and broader interactive media systems. Thus, MAG represents a transformative step in video generation, leveraging the DiT architecture to integrate multi-modal controls seamlessly.
-
----
-
-## Overview
+## Introduction
 
 The video game industry experiences exponential growth, with rising demands for personalized, immersive content; however, traditional manually coded game engines prove increasingly prohibitive in cost and time. In response, generative video models have emerged as powerful alternatives, yet existing models face significant limitations, such as weak multimodal controllability and issues of spatial misalignment and autoregressive drift.
 
