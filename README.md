@@ -7,7 +7,7 @@
 
 ## Introduction
 
-![Compare](
+![](
 https://github.com/ICME2025sub/MAG/blob/main/material/compare.png)
 
 The video game industry experiences exponential growth, with rising demands for personalized, immersive content; however, traditional manually coded game engines prove increasingly prohibitive in cost and time. In response, generative video models have emerged as powerful alternatives, yet existing models face significant limitations, such as weak multimodal controllability and issues of spatial misalignment and autoregressive drift.
@@ -27,7 +27,7 @@ This work introduces **Make-A-Game (MAG)**, the first interactive game simulatio
 
 ## Methodology Overview
 
-![Architecture Overview](
+![](
 https://github.com/ICME2025sub/MAG/blob/main/material/overview.png)
 
 MAG's architecture consists of three core modules:
@@ -55,10 +55,13 @@ We rigorously evaluated MAG against state-of-the-art video generation models, us
 ### Ablation Studies
 
 - **Environmental Control (UC-3DMMAttn):** UC-3DMMAttn significantly enhances both video quality and spatial alignment compared to simplified control approaches.
+
 ![](https://github.com/ICME2025sub/MAG/blob/main/material/tab3.png)
 
-- **Action Control (APB):** APB dramatically improves subject and background consistency, validating its necessity for effective interactive control. 
+- **Action Control (APB):** APB dramatically improves subject and background consistency, validating its necessity for effective interactive control.
+
 ![](https://github.com/ICME2025sub/MAG/blob/main/material/tab4.png)
+
 ---
 
 ## Qualitative Results
