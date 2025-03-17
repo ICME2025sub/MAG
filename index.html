@@ -13,32 +13,32 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: rgba(243, 238, 245, 0.951);
+            background-color: #ffffff; /* 设置网页主体部分为白色背景 */
             padding: 0 20px;
             margin: 0 auto;
             max-width: 900px;
         }
 
         header {
+            background-color: #b387ce; /* 深紫色背景 */
+            color: white;
             text-align: center;
             padding: 40px 0;
         }
 
-        h1,
-        h2,
-        h3 {
-            color: #333;
+        h1, h2, h3 {
+            color: #fff; /* 确保标题文字为白色 */
         }
 
         .links a {
-            color: #555;
+            color: #fff;
             text-decoration: none;
             margin: 0 10px;
             font-size: 1.2em;
         }
 
         .links a:hover {
-            color: #000;
+            color: #f1f1f1;
         }
 
         .section {
@@ -52,7 +52,7 @@
         }
 
         .icon {
-            color: #007bff;
+            color: rgb(42, 27, 83);
             margin-right: 8px;
         }
 
@@ -85,76 +85,45 @@
             font-weight: bold;
         }
     </style>
-    <title>Make-A-Game (MAG): A Novel Paradigm for Interactive Game Rendering</title>
 </head>
 
 <body>
     <div class="container">
-        <header style="text-align:center; margin-top: 40px;">
+        <header>
             <h1>🎮 Make-A-Game (MAG)</h1>
             <h3>A Novel Paradigm for Interactive Game Rendering</h3>
             <p><em>Anonymous ICME submission</em></p>
             <div class="links">
-                <a href="YOUR_ARXIV_LINK_HERE"><i class="fa-brands fa-arxiv"></i> ArXiv(waiting for final review
-                    decision)</a>
+                <a href="YOUR_ARXIV_LINK_HERE"><i class="fa-brands fa-arxiv"></i> ArXiv(waiting for final review decision)</a>
                 <a href="https://github.com/ICME2025sub/MAG"><i class="fab fa-github"></i> GitHub</a>
             </div>
-    </div>
-    </head>
+        </header>
+        
+        <h2><i class="fas fa-gamepad icon"></i> Overview</h2>
+        <p>Driven by the growing demand for immersive and personalized gaming experiences...</p>
+        
+        <h2><i class="fas fa-star icon"></i> Highlights</h2>
+        <ul>
+            <li><i class="fa-solid fa-check icon"></i> First DiT-based model for interactive game video generation.</li>
+            <li><i class="fa-solid fa-check icon"></i> Unified control of spatial and non-spatial alignment signals.</li>
+            <li><i class="fa-solid fa-check icon"></i> Lightweight APB modules enabling real-time entity manipulation.</li>
+            <li><i class="fa-solid fa-check icon"></i> SOTA performance in controllability and temporal coherence.</li>
+        </ul>
 
-    <body>
-        <div class="container">
-            <h2><i class="fas fa-gamepad icon"></i> Overview</h2>
-            <p>Driven by the growing demand for immersive and personalized gaming experiences, existing game video
-                generation models often lack robust multi-modal control and suffer from spatial misalignment or
-                autoregressive drift, thereby necessitating a more advanced real-time interactive solution. To this end,
-                we propose Make-A-Game (MAG), the first DIT-based interactive game video generation model that unifies
-                spatial and non-spatial alignment control signals within the UC-3DMMAttn module and employs Action
-                Prompt Blocks (APBs) for precise, real-time manipulation of in-game entities. MAG follows a three-stage
-                training approach, enabling it to produce high-resolution, drift-free, and temporally coherent content
-                by dynamically modulating character actions while preserving detailed environments. Extensive
-                experiments demonstrate MAG's superiority in controllability, video fidelity, and stability, providing
-                new avenues for industrial-scale game development and broader interactive media systems. Thus, MAG
-                represents a transformative step in video generation, leveraging the DIT architecture to integrate
-                multi-modal controls seamlessly.</p>
+        <h2>MAG Architecture Overview</h2>
+        <img src="https://raw.githubusercontent.com/ICME2025sub/MAG/main/material/overview.png" alt="MAG Architecture Diagram" class="architecture-image">
+        <p>The MAG architecture employs a "backbone + lightweight branch" design...</p>
 
-            <h2><i class="fas fa-star icon"></i> Highlights</h2>
-            <ul>
-                <li><i class="fa-solid fa-check icon"></i> First DiT-based model for interactive game video generation.
-                </li>
-                <li><i class="fa-solid fa-check icon"></i> Unified control of spatial and non-spatial alignment signals.
-                </li>
-                <li><i class="fa-solid fa-check icon"></i> Lightweight APB modules enabling real-time entity
-                    manipulation.</li>
-                <li><i class="fa-solid fa-check icon"></i> SOTA performance in controllability and temporal coherence.
-                </li>
-            </ul>
-            <h2>MAG Architecture Overview</h2>
-            <img src="https://raw.githubusercontent.com/ICME2025sub/MAG/main/material/overview.png"
-                alt="MAG Architecture Diagram" class="architecture-image">
-            <p>The MAG architecture employs a "backbone + lightweight branch" design, where the backbone handles
-                environment generation through stacked UC-3DMMDiT blocks, and the Action Prompt Blocks (APBs) provide
-                real-time character action control.</p>
+        <h2>Quantitative Results</h2>
+        <p>MAG achieves state-of-the-art performance in multiple metrics...</p>
+        <img src="https://raw.githubusercontent.com/ICME2025sub/MAG/main/material/tab2.png" alt="Qualitative Comparison with Other Models" class="comparison-image">
 
-            <h2>Quantitative Results</h2>
-            <p>MAG achieves state-of-the-art performance in multiple metrics related to video quality and
-                controllability. It excels particularly in maintaining temporal coherence, dynamic fluidity, and precise
-                alignment with user inputs.</p>
+        <h2>Qualitative Results</h2>
+        <img src="https://raw.githubusercontent.com/ICME2025sub/MAG/main/material/qualitative.png" alt="Qualitative Comparison with Other Models" class="comparison-image">
+        <p>MAG effectively integrates essential game elements...</p>
 
-            <img src="https://raw.githubusercontent.com/ICME2025sub/MAG/main/material/tab2.png"
-                alt="Qualitative Comparison with Other Models" class="comparison-image">
-
-
-
-            <h2>Qualitative Results</h2>
-            <img src="https://raw.githubusercontent.com/ICME2025sub/MAG/main/material/qualitative.png"
-                alt="Qualitative Comparison with Other Models" class="comparison-image">
-            <p>MAG effectively integrates essential game elements such as mini-maps, health bars, ammo counters, and
-                avoids distortions and drift, as demonstrated in qualitative comparisons with existing state-of-the-art
-                models.</p>
-
-            <h2>BibTeX Citation</h2>
-            <pre>
+        <h2>BibTeX Citation</h2>
+        <pre>
 @article{Anonymous2025MAG,
   title={Make A Game: A Novel Paradigm for Interactive Game Rendering},
   author={Anonymous},
@@ -163,10 +132,10 @@
 }
         </pre>
 
-            <footer>
-                <p>&copy; 2025 MAG Team. All rights reserved.</p>
-            </footer>
-        </div>
-    </body>
+        <footer>
+            <p>&copy; 2025 MAG Team. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
 
 </html>
